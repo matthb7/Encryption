@@ -1,39 +1,45 @@
 # Project 5 - Encryption
 
-Time spent: **X** hours spent in total
+Time spent: 6 hours spent in total
 
 ## User Stories
 
 The following **required** functionality is completed:
 
 1\. Symmetric Encrypt/Decrypt
-  * [ ]  Required: Repair the symmetric encrypt and decrypt code
+  * [X]  Required: Repair the symmetric encrypt and decrypt code
 
 2\. Encrypted Message 1
   * [ ]  Required: Decrypt the government message
   * [ ]  Required: Encrypt a response and include in this README
 
 3\. Generate Public-Private Keys
-  * [ ]  Required: Repair the key generator code
-  * [ ]  Required: Generate keys for "johnsteed" and add him to the Agent Directory
+  * [X]  Required: Repair the key generator code
+  * [X]  Required: Generate keys for "johnsteed" and add him to the Agent Directory
 
 4\. Asymmetric Encrypt/Decrypt
-  * [ ]  Required: Repair the asymmetric encrypt and decrypt code
+  * [X]  Required: Repair the asymmetric encrypt and decrypt code
 
 5\. Create/Verify Signature
-  * [ ]  Required: Repair the create and verify signature code
+  * [X]  Required: Repair the create and verify signature code
   
 6\. Encrypted Message 2
-  * [ ]  Required: Decrypt the message
+  * [X]  Required: Decrypt the message
+         -Decrypted Message: 
+         Cannot access APEX from this location. 
+         Send new agent codename and public key so I can contact. 
+         Encrypt response to protect codename. 
+         Include signature to verify identity and message integrity. 
+         -- sydneybristow
   * [ ]  Required: Verify the message
   * [ ]  Required: Include a response message in this README
 
 7\. Agent Messages
-  * [ ]  Required: Repair the dropbox code
-  * [ ]  Required: Repair the messages area
-  * [ ]  Required: Display encrypted messages for all agents
-  * [ ]  Required: Messages indicate whether the message signature is valid
-  * [ ]  Required: Your messages are automatically decrypted
+  * [X]  Required: Repair the dropbox code
+  * [X]  Required: Repair the messages area
+  * [X]  Required: Display encrypted messages for all agents
+  * [X]  Required: Messages indicate whether the message signature is valid
+  * [X]  Required: Your messages are automatically decrypted
 
 8\. Identify the Double Agent
   * [ ]  Required: Decrypt as many email messages as possible
@@ -42,7 +48,9 @@ The following **required** functionality is completed:
 The following objectives are **optional**:
 
 * Bonus Objective 1\.
-  * [ ]  Track down the bugs in the code and fix them.
+  * [X]  Track down the bugs in the code and fix them.
+         -1 SQL bug found in function find_agent_by_id() in query_functions.php (Escape Strings).
+         -6 XSS bugs found in symmetric_encryption.php (Sanatize Output).
 
 * Bonus Objective 2\.
   * [ ]  Write a report of your discoveries (longer than 300 characters).
@@ -53,7 +61,8 @@ The following objectives are **optional**:
   * [ ]  Add a "Create/Verify Checksum" section to the Encryption Tools area.
 
 * Advanced Objective 1\.
-  * [ ]  Add support for other symmetric algorithms.
+  * [X]  Add support for other symmetric algorithms.
+         -Support for AES-256-CBC, AES-128-CBC, AES-192-CBC, DES-EDE3-CBC
 
 ## Video Walkthrough
 
@@ -69,7 +78,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2017] [Matthew Blumen]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
